@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="Assets/style.css">
+
+</head>
+<body>
+    
+    <main class="main">
+
+        <section class="main__contactoFormulario">
+            <h2 class="contactoFormulario__title">Registrar Contacto</h2>
+
+            <form class="contactoFormulario">
+
+                
+                <figure class="contactoFormulario__img">
+                    <label id="labelImagen" for="imagen">Subir imagen</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                    <img id="vistaPrevia" alt="Vista previa de imagen" >        
+                </figure>
+
+
+
+                <div class="contactoFormulario__field">
+                    <label for="nombre" class="contactoFormulario__label">Nombre</label>
+                    <input type="text" id="nombre" class="contactoFormulario__input" placeholder="Ingrese nombre de contacto">
+                </div>
+                <div class="contactoFormulario__field">
+                    <label for="celular" class="contactoFormulario__label">Celular</label>
+                    <input type="text" id="celular" class="contactoFormulario__input" placeholder="Ingrese número de celular">
+                </div>
+                <div class="contactoFormulario__field">
+                    <label for="correo" class="contactoFormulario__label">Correo </label>
+                    <input type="email" id="correo" class="contactoFormulario__input" placeholder="Ingrese correo electrónico">
+                </div>
+                <div class="contactoFormulario__actions">
+                    <button type="submit" class="contactoFormulario__button  contactoFormulario__button--añadir">Añadir</button>
+                    <button type="reset" class="contactoFormulario__button contactoFormulario__button--cancelar">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+
+
+        <section class="main__listaContacto">
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="Assets/index.js"></script>
+
+
+</body>
+</html>
